@@ -1,26 +1,57 @@
 body{
     background: #222643;
-}
-
-form{
-    background: #2f9c21;
-    min-height: 450px;
-    width: 50%;
-}
-
-.father{
     display: flex;
     justify-content: center;
-}
-
-.DIV_PRINCIPAL{
-    background: rgb(65, 16, 16);
-    max-width: 50%;
-}
-
-.div1{
-    background: rgb(162, 142, 142);
     align-items: center;
-    max-width: 50%;
 }
 
+main{
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 950px){
+main h1 {
+    font-size: 3.5rem;
+    }
+}
+
+
+main .content li::before{
+    content: url(assets/images/icon-list.png);
+    position: absolute;
+    top: 0;
+    left: -40px;
+}
+
+
+.feedback{
+    max-width: 100%;
+    width: 105%;
+    background-color: red;
+    color: black;
+    font-size: 12px;
+        visibility: hidden; 
+        opacity: 0;
+}
+
+.success{
+    border: 3px solid lime;
+}
+
+.error{
+    border:3px solid red;
+    width: 60%;
+}
+
+@media (min-width: 950px){
+main {
+    padding: 20px;
+    width: 925px;
+    flex-direction: row-reverse;
+    height: 645px;
+    border-radius: 30px;
+    }
+}
